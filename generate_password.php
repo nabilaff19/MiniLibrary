@@ -1,0 +1,1 @@
+$password = password_hash('password1', PASSWORD_DEFAULT);

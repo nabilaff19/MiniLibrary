@@ -1,0 +1,102 @@
+/* Palet warna */
+:root {
+    --pink-light: #F6D5D5;
+    --pink-dark: #FFB6C1;
+    --background: #F6ECEC;
+    --text-dark: #333;
+    --button-hover: #FFC4C4;
+}
+
+/* Reset dasar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+}
+
+/* Container utama */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 3px solid var(--pink-light);
+}
+
+/* Logo di atas */
+.logo img {
+    width: 150px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    border: none; 
+}
+
+/* Informasi pengguna */
+.info {
+    margin-top: 15px;
+}
+
+.info-item {
+    background-color: var(--pink-light);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek shadow */
+}
+
+/* Efek gelombang pada data */
+.info-item:hover {
+    transform: scale(1.05); /* Memperbesar sedikit */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow lebih besar */
+    border: 2px solid var(--pink-dark); /* Border gelap saat hover */
+}
+
+/* Tombol untuk setiap data */
+.info-item button {
+    background-color: var(--pink-dark);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Efek gelombang pada tombol */
+.info-item button:hover {
+    transform: scale(1.05); /* Efek tombol lebih besar */
+}
+
+/* Tombol kembali */
+.back-button {
+    display: inline-block;
+    background-color: var(--pink-light);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--text-dark);
+    text-decoration: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: var(--pink-dark);
+    transform: scale(1.05);
+}

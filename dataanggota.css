@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff6f2;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px; /* Menambah padding di dalam container */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffff;
+    background-color: #ffd1dc; /* Latar belakang pink */
+    padding: 10px 15px; /* Memberikan padding pada judul */
+    border-top-left-radius: 8px; /* Agar sudut kiri atasnya bulat */
+    border-top-right-radius: 8px; /* Agar sudut kanan atasnya bulat */
+    margin: 0;
+    position: relative;
+}
+
+h1 .back-icon {
+    position: absolute;
+    top: 50%; /* Posisikan di tengah vertikal */
+    left: 15px; /* Jarak dari kiri */
+    transform: translateY(-50%); /* Sesuaikan posisi agar sejajar */
+    display: block;
+    align-items: center;
+    width: 40px; /* Ukuran ikon */
+    height: 40px;
+}
+
+h1 .back-icon img {
+    width: 100%; /* Ukuran ikon */
+    height: 100%;
+    object-fit: contain
+}
+
+button, input[type="submit"] {
+    background: #F5B6C6; /* Warna pink */
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #D73B5C; /* Warna pink lebih gelap saat hover */
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Menambah jarak bawah pada tabel */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+    text-align: left; /* Hanya kolom kedua (Nama) yang rata kiri */
+}
+
+table th {
+    background-color: #F5B6C6; /* Warna latar belakang tabel header pink */
+    color: white; /* Warna teks tabel header putih */
+}
+
+table td a {
+    text-decoration: none;
+    color: white;
+    background-color: #F5B6C6; /* Warna tombol Hapus dan Edit */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+table td a:hover {
+    background-color: #D73B5C; /* Warna saat hover tombol Hapus dan Edit */
+}
+
+/* Styling untuk form tambah/edit anggota */
+form {
+    margin-top: 40px; /* Menambah jarak antara form dan elemen sebelumnya */
+    background: #F6ECEC; /* Background pink */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Memberikan shadow pada form */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #F5B6C6; /* Warna tombol submit pink */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+}
+
+form button:hover {
+    background: #D73B5C; /* Warna tombol submit saat hover */
+}
